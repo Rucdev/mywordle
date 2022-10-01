@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { RecoilRoot } from 'recoil';
+import { Wordle } from './wordle/Wordle';
+import { SimpleMultiInput } from './multi_input';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <RecoilRoot>
+      {/* <Wordle /> */}
+      <SimpleMultiInput />
+    </RecoilRoot>
   </React.StrictMode>
 );
 
